@@ -1,0 +1,28 @@
+a{
+	text-decoration: none;
+	color: white;
+}
+.bottomlinks ul{
+	list-style: none;
+	padding: 0;
+}
+
+
+.footer{
+	background-color:rgba(0, 0, 0, 0.96);
+	color: white;
+}
+.footer .bottomlinks{
+	text-align: left;
+}
+
+.footer{
+	box-sizing: border-box;
+	width:100%;              
+}
+ 
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;  
+}

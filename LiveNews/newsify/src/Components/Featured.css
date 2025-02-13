@@ -1,0 +1,40 @@
+@media(min-width: 992px){
+    
+    .widthh{
+       width: 50%;
+    }       
+}
+.square-image {
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 5px;
+  }
+  .over{
+    overflow: hidden;
+  }
+.article-title {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.squar-image {
+    width: 400px;
+    height: 230px;
+    object-fit: cover;
+    margin-left: 5px;
+  }
+  .description {
+    max-width: 33.33%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .hr-black {
+    border: none;
+    height: 2px; 
+    background-color: black;
+    
+}

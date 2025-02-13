@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.article {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+  overflow: hidden;
+  padding: 1em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.article:nth-child(3n + 1),
+.article:nth-child(3n + 2),
+.article:nth-child(3n + 3) {
+  justify-self: stretch;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.4) 50%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.article h1 {
+  font-size: 1.5em;
+  font-family: 'Oswald';
+  margin-top: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.article h1 span {
+  color: #fff;
+}
+
+.article .title {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
