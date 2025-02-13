@@ -32,9 +32,18 @@ const List = () => {
                   <img src={gene.urlToImage} alt="" className="squar-image rounded-5" />
                 </div>
                 <div className="my-2">
-                  <Link to={`/articles/${gene._id}`} style={{ fontWeight: "bold" ,textDecoration:'none',color:'black',fontSize:'30px'}}>
+                <a
+                    href={gene.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      fontSize: "30px",
+                      fontWeight: "bold",
+                      color: "black",
+                    }}
+                  >
                     {gene.title}
-                  </Link>
+                  </a>
                   <div className="d-flex align-items-center gap-2" style={{ color: "#777" }}>
                     <span>Source:</span>
                     <Link style={{ color: "#000080" }}>{gene.source.name}</Link>
